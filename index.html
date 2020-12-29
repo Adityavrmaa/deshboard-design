@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title> Daskboard</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: #b8c6db;
+background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+
+        }
+        .rounded:hover{
+            overflow: hidden;
+            font-size: 20px;
+        }
+        .rounded{
+            transition: 0.2s ease-in;
+            
+            
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Deskboard</h3>
+            </div>
+            
+            <ul class="list-unstyled components">
+                <p>desk</p>
+                <div>
+                 uploada file code
+                    
+                 </div>
+                 <!--personal info  -->
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle font-weight-bold"><i class="fa fa-user" aria-hidden="true"></i>PERSONAL INFO</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">View Profile</a>
+                        </li>
+                        <li>
+                            <a href="#">Edit personal Detail</a>
+                        </li>
+                        <li>
+                            <a href="#">Edit Nomainee Detail</a>
+                        </li>
+                        <li>
+                            <a href="#">Edit Account Detail</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- <end of personal info  -->
+                <li>
+                    <a href="#boSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle font-weight-bold"><i class="fa fa-building pr-2"></i>My Bussiness</a>
+                    <ul class="collapse list-unstyled" id="boSubmenu">
+                        <li>
+                            <a href="#">Matching tree View</a>
+                        </li>
+                       
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle font-weight-bold"><i class="fa fa-usd pr-2"></i>Fund</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Create fund Account</a>
+                        </li>
+                        <li>
+                            <a href="#">Transfer Fund</a>
+                        </li>
+                        <li>
+                            <a href="#">Transfer Fund Report</a>
+                        </li>
+                        <li>
+                            <a href="#">Available Fund</a>
+                        </li>
+                        <li>
+                            <a href="#">Fund Request Report</a>
+                        </li>
+                        <li>
+                            <a href="#">Active Member Fund</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageaSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle font-weight-bold"><i class="fa fa-user-circle-o pr-2"></i>USER POSITION</a>
+                    <ul class="collapse list-unstyled" id="pageaSubmenu">
+                        <li>
+                            <a href="#">Direst User</a>
+                        </li>
+                        <li>
+                            <a href="#">Left User</a>
+                        </li>
+                        <li>
+                            <a href="#">Right User</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+
+                 <!-- *************** INCOME REPORT SESSION    ************-->
+                <li class="active">
+                    <a href="#Submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle font-weight-bold"><i class="fa fa-money pr-2"></i>INCOME REPORT </a>
+                    <ul class="collapse list-unstyled" id="Submenu">
+                        <li>
+                            <a href="#">Direst Income Report</a>
+                        </li>
+                        <li>
+                            <a href="#">Matching Income Report</a>
+                        </li>
+                        <li>
+                            <a href="#">Direct Referal Business Income</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-2x fas fa-crown p-1" ></i>Reward</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- widra request  -->
+                <li>
+                    <a href="#"   class="dropdown-toggle font-weight-bold"><i class="fa fa-inr pr-2"></i>Widral Request</a>
+                    
+                </li>
+                <li>
+                    <a href="#"   class="dropdown-toggle font-weight-bold">Change Password</a>
+                    
+                </li>
+                <li>
+                    <a href="#"   class="dropdown-toggle font-weight-bold"><i class="fa fa-sign-out pr-2 "></i>Sign Out</a>
+                    
+                </li>
+            </ul>
+
+           
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-danger">
+                        <i class="fas fa fa-outdent fa-1x"></i>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-success d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto text-center">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+         <!--***************************Card start session *************************-->
+         <div class="row">
+            <div class="col-lg-3 col-md-6 col-12 shadow p-3 mb-5 bg-white rounded" style="margin-top: 20px">
+                        <div class="card border-primary">
+                            <div class="card-body bg-success text-white ">
+                                <div class="row">
+                                    <div class="col-3 col-sm-3">
+                                        <i class="pt-3 fa fa-sitemap fa-3x"></i>
+                                    </div>
+                                    <div class="col-9 text-right">
+                                        <h1>0</h1>
+                                        <h4>member</h4>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        
+                    </div>
+                    <!-- 2nd  -->
+                    <div class="col-lg-3 col-md-6 col-sm-12 shadow p-3 mb-5 bg-white rounded" style="margin-top: 20px">
+                        <div class="card border-primary">
+                            <div class="card-body bg-danger text-white">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <i class="pt-3 fa fa-line-chart fa-3x" aria-hidden="true"></i>
+                                        
+                                    </div>
+                                    <div class="col-9 text-right">
+                                        <h1>0</h1>
+                                        <h4>  member</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                      <!-- 3rd  -->
+                      <div class="col-lg-3 col-md-6 col-sm-12 shadow p-3 mb-5 bg-white rounded" style="margin-top: 20px">
+                        <div class="card border-primary">
+                            <div class="card-body bg-dark  text-white">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <i class="pt-3 fa fa-bar-chart fa-3x"></i>
+                                    </div>
+                                    <div class="col-9 text-right">
+                                        <h1>0</h1>
+                                        <h4>  member</h4>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        
+                    </div>
+                    <!-- 4th  -->
+                    <div class="col-lg-3 col-md-6 col-sm-12 shadow p-3 mb-5 bg-white rounded" style="margin-top: 20px">
+                        <div class="card border-primary">
+                            <div class="card-body bg-secondary  text-white">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <i class="pt-3 fa fa-paper-plane fa-3x"></i>
+                                    </div>
+                                    <div class="col-9 text-right">
+                                        <h1>0</h1>
+                                        <h4>  member</h4>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        
+                    </div>
+                    <!-- 5 th  -->
+                    <div class="col-lg-3 col-md-6 col-sm-12 shadow p-3 mb-5 bg-white rounded" style="margin-top: 20px">
+                        <div class="card border-primary">
+                            <div class="card-body bg-info text-white">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <i class="pt-3 fa fa-pie-chart fa-3x"></i>
+                                    </div>
+                                    <div class="col-9 text-right">
+                                        <h1>0</h1>
+                                        <h4>  member</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                     <!-- 6th  -->
+                     <div class="col-lg-3 col-md-6 col-sm-12 shadow p-3 mb-5 bg-white rounded" style="margin-top: 20px">
+                        <div class="card border-primary">
+                            <div class="card-body bg-dark  text-white">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <i class="pt-3 fa fa-user fa-3x"></i>
+                                    </div>
+                                    <div class="col-9 text-right">
+                                        <h1>0</h1>
+                                        <h4>  member</h4>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        
+                    </div>
+                    <!-- 7th  -->
+                    <div class="col-lg-3 col-md-6 col-sm-12 shadow p-3 mb-5 bg-white rounded" style="margin-top: 20px">
+                        <div class="card border-primary">
+                            <div class="card-body bg-secondary  text-white">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <i class="pt-3 fa fa-thumbs-up fa-3x"></i>
+                                    </div>
+                                    <div class="col-9 text-right">
+                                        <h1>0</h1>
+                                        <h4>  member</h4>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        
+                    </div>
+                    <!-- 8th  -->
+                    <div class="col-lg-3 col-md-6 col-sm-12 shadow p-3 mb-5 bg-white rounded" style="margin-top: 20px">
+                        <div class="card border-primary">
+                            <div class="card-body bg-primary  text-white">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <i class="pt-3 fa fa-user-plus fa-3x"></i>
+                                    </div>
+                                    <div class="col-9 text-right">
+                                        <h1>0</h1>
+                                        <h4>  member</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- 9th  -->
+                    <div class="col-lg-3 col-md-6 col-sm-12 shadow p-3 mb-5 bg-white rounded" style="margin-top: 20px">
+                        <div class="card border-primary">
+                            <div class="card-body bg-warning text-white">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <i class="pt-3 fa fa-user fa-3x"></i>
+                                    </div>
+                                    <div class="col-9 text-right">
+                                        <h1>0</h1>
+                                        <h4>  member</h4>
+                                    </div>
+                                </div>
+                            </div>
+                         
+                        </div>
+                        
+                    </div>
+                    <!-- 10 th  -->
+                    <div class="col-lg-3 col-md-6 col-sm-12 shadow p-3 mb-5 bg-white rounded" style="margin-top: 20px">
+                        <div class="card border-primary">
+                            <div class="card-body bg-danger text-white">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <i class="pt-3 fa fa-universal-access fa-3x"></i>
+                                    </div>
+                                    <div class="col-9 text-right">
+                                        <h1>0</h1>
+                                        <h4>  member</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <!-- 11th   -->
+                    <div class="col-lg-3 col-md-6 shadow p-3 mb-5 bg-white rounded" style="margin-top: 20px">
+                        <div class="card border-primary">
+                            <div class="card-body bg-info text-white">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <i class="pt-3 fa fa-random fa-3x"></i>
+                                    </div>
+                                    <div class="col-9 text-right">
+                                        <h1>0</h1>
+                                        <h4>  member</h4>
+                                    </div>
+                                </div>
+                          
+                        </div>
+                        
+                    </div>
+                    </div>
+                    <!-- 12 th  -->
+                    <div class="col-lg-3 col-md-6 shadow p-3 mb-5 bg-white rounded" style="margin-top: 20px">
+                        <div class="card border-primary">
+                            <div class="card-body bg-danger  text-white">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <i class="pt-3 fa fa-smile-o fa-3x"></i>
+                                    </div>
+                                    <div class="col-9 text-right">
+                                        <h1>0</h1>
+                                        <h4>  member</h4>
+                                    </div>
+                                </div>
+                          
+                        </div>
+                        
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer strat  -->
+<footer class="page-footer font-small blue bg-dark text-light">
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://mdbootstrap.com/"> Company.com</a>
+    </div>
+
+  
+  </footer>
+  <!-- Footer End -->
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
